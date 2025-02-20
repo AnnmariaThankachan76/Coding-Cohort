@@ -14,5 +14,13 @@ Select * from student;
 Insert into student (id,name,age) 
  values 
  (5,"Ann",19),
- (6,"Sarath",23)
+ (6,"Sarath",23);
+
+CREATE TABLE employee(
+  id int primary key,
+  name varchar(50),
+  age int not null,
+  salary int default 25000,
+  foreign key(coust_id) references Customers(customer_id)
+  );
 
